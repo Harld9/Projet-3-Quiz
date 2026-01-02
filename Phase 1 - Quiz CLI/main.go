@@ -297,8 +297,8 @@ func main() {
 				fmt.Println("1 - Continuez les quizz !")
 				fmt.Println("0 - Quittez")
 
-				_, err2 := fmt.Scan(&menuchoice)
-				if err2 != nil {
+				_, err := fmt.Scan(&menuchoice)
+				if err != nil {
 					fmt.Println("❌ Choix impossible, réessayez.")
 					fmt.Scanln(&videur)
 					time.Sleep(sleep)
@@ -354,8 +354,8 @@ func main() {
 				fmt.Println("1 - Continuez les quizz !")
 				fmt.Println("0 - Quittez")
 
-				_, err2 := fmt.Scan(&menuchoice)
-				if err2 != nil {
+				_, err := fmt.Scan(&menuchoice)
+				if err != nil {
 					fmt.Println("❌ Choix impossible, réessayez.")
 					fmt.Scanln(&videur)
 					time.Sleep(sleep)
