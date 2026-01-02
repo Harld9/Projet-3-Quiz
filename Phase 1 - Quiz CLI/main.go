@@ -211,11 +211,11 @@ func main() {
 					fmt.Println(questionsFaciles[i].choix[2])
 					fmt.Println(questionsFaciles[i].choix[3])
 
-					_, err := fmt.Scan(&reponsequestion)
+					_, errreponse := fmt.Scan(&reponsequestion)
 					if reponsequestion == "A" || reponsequestion == "B" || reponsequestion == "C" || reponsequestion == "D" {
 						reponsequestion = strings.ToLower(reponsequestion)
 					}
-					if err != nil || len(reponsequestion) > 1 || reponsequestion != "a" && reponsequestion != "b" && reponsequestion != "c" && reponsequestion != "d" {
+					if errreponse != nil || len(reponsequestion) > 1 || reponsequestion != "a" && reponsequestion != "b" && reponsequestion != "c" && reponsequestion != "d" {
 						fmt.Println("❌ Choix impossible, réessayez.")
 						fmt.Scanln(&videur)
 						time.Sleep(sleep)
@@ -268,11 +268,11 @@ func main() {
 					fmt.Println(questionsMoyennes[i].choix[2])
 					fmt.Println(questionsMoyennes[i].choix[3])
 
-					_, err := fmt.Scan(&reponsequestion)
+					_, errreponse := fmt.Scan(&reponsequestion)
 					if reponsequestion == "A" || reponsequestion == "B" || reponsequestion == "C" || reponsequestion == "D" {
 						reponsequestion = strings.ToLower(reponsequestion)
 					}
-					if err != nil || len(reponsequestion) > 1 || reponsequestion != "a" && reponsequestion != "b" && reponsequestion != "c" && reponsequestion != "d" {
+					if errreponse != nil || len(reponsequestion) > 1 || reponsequestion != "a" && reponsequestion != "b" && reponsequestion != "c" && reponsequestion != "d" {
 
 						fmt.Println("❌ Choix impossible, réessayez.")
 						fmt.Scanln(&videur)
@@ -325,11 +325,11 @@ func main() {
 					fmt.Println(questionsDifficiles[i].choix[2])
 					fmt.Println(questionsDifficiles[i].choix[3])
 
-					_, err := fmt.Scan(&reponsequestion)
+					_, errreponse := fmt.Scan(&reponsequestion)
 					if reponsequestion == "A" || reponsequestion == "B" || reponsequestion == "C" || reponsequestion == "D" {
 						reponsequestion = strings.ToLower(reponsequestion)
 					}
-					if err != nil || len(reponsequestion) > 1 || reponsequestion != "a" && reponsequestion != "b" && reponsequestion != "c" && reponsequestion != "d" {
+					if errreponse != nil || len(reponsequestion) > 1 || reponsequestion != "a" && reponsequestion != "b" && reponsequestion != "c" && reponsequestion != "d" {
 						fmt.Println("❌ Choix impossible, réessayez.")
 						fmt.Scanln(&videur)
 						time.Sleep(sleep)
